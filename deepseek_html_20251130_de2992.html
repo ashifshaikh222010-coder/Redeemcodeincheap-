@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARDING REDEEM CODE - Premium PlayStore Codes</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #1a1a2e;
+            --primary-dark: #16213e;
+            --secondary: #0f9d58;
+            --accent: #e94560;
+            --dark: #0f0f23;
+            --light: #f8f9fa;
+            --gray: #5f6368;
+            --border: #2d3047;
+            --gold: #ffd700;
+        }
+
+        body {
+            background: linear-gradient(135deg, #0f0f23 0%, #1a1a2e 100%);
+            color: white;
+            line-height: 1.6;
+            overflow-x: hidden;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        /* Simple Header */
+        .simple-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .logo {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .logo i {
+            font-size: 2.5rem;
+            color: var(--gold);
+            text-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        }
+
+        .logo-text {
+            background: linear-gradient(45deg, var(--gold), #ff6b6b);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(26, 26, 46, 0.9), rgba(22, 33, 62, 0.9));
+            color: white;
+            padding: 3rem 0;
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(45deg, var(--gold), #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto;
+            color: #e0e0e0;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent), #ff6b6b);
+            color: white;
+            padding: 1rem 2.5rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            box-shadow: 0 6px 20px rgba(233, 69, 96, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(233, 69, 96, 0.6);
+        }
+
+        /* Products Section */
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: white;
+            position: relative;
+        }
+
+        .section-title:after {
+            content: '';
+            display: block;
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(45deg, var(--accent), var(--gold));
+            margin: 15px auto;
+            border-radius: 2px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 5rem;
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, #1e1e3a, #252547);
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            border: 1px solid var(--border);
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(10px);
+        }
+
+        .product-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+            border-color: var(--accent);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 18px;
+            right: 18px;
+            background: linear-gradient(45deg, var(--accent), #ff6b6b);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            z-index: 2;
+        }
+
+        .product-icon {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            padding: 2rem;
+            color: var(--gold);
+            font-size: 3rem;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-icon:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: 0.5s;
+        }
+
+        .product-card:hover .product-icon:before {
+            left: 100%;
+        }
+
+        .product-info {
+            padding: 1.8rem;
+        }
+
+        .product-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            color: white;
+            font-weight: 700;
+        }
+
+        .product-price {
+            font-size: 2.2rem;
+            font-weight: 800;
+            color: var(--gold);
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        .redeem-value {
+            font-size: 1.4rem;
+            color: var(--secondary);
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            background: rgba(15, 157, 88, 0.15);
+            padding: 0.6rem;
+            border-radius: 8px;
+            border: 1px solid var(--secondary);
+        }
+
+        .product-features {
+            list-style: none;
+            margin-bottom: 1.8rem;
+            text-align: left;
+        }
+
+        .product-features li {
+            padding: 0.5rem 0;
+            display: flex;
+            align-items: center;
+            color: #e0e0e0;
+            font-size: 0.9rem;
+        }
+
+        .product-features li i {
+            color: var(--secondary);
+            margin-right: 10px;
+            font-size: 1rem;
+        }
+
+        /* Payment Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            overflow-y: auto;
+        }
+
+        .modal-content {
+            background: linear-gradient(145deg, #1e1e3a, #252547);
+            width: 100%;
+            max-width: 520px;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: modalAppear 0.4s ease;
+            margin: auto;
+            border: 1px solid var(--border);
+        }
+
+        @keyframes modalAppear {
+            from {
+                opacity: 0;
+                transform: translateY(-50px) scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        .modal-header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 1.8rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1px solid var(--accent);
+        }
+
+        .modal-header h2 {
+            font-size: 1.6rem;
+            color: var(--gold);
+        }
+
+        .close-modal {
+            font-size: 2rem;
+            cursor: pointer;
+            transition: transform 0.3s;
+            background: none;
+            border: none;
+            color: white;
+        }
+
+        .close-modal:hover {
+            transform: rotate(90deg);
+            color: var(--accent);
+        }
+
+        .modal-body {
+            padding: 2rem;
+            max-height: 70vh;
+            overflow-y: auto;
+        }
+
+        .order-summary {
+            background: rgba(255,255,255,0.05);
+            padding: 1.5rem;
+            border-radius: 12px;
+            margin-bottom: 1.8rem;
+            border: 1px solid var(--border);
+        }
+
+        .order-item {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1rem;
+            color: #e0e0e0;
+        }
+
+        .order-total {
+            display: flex;
+            justify-content: space-between;
+            font-weight: 700;
+            font-size: 1.3rem;
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+            margin-top: 1rem;
+            color: var(--gold);
+        }
+
+        .payment-method {
+            text-align: center;
+            margin-bottom: 1.8rem;
+            padding: 1.2rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid var(--accent);
+        }
+
+        .payment-method i {
+            font-size: 2.2rem;
+            color: var(--accent);
+            margin-bottom: 0.8rem;
+        }
+
+        .payment-details {
+            margin-top: 1.8rem;
+            padding: 1.8rem;
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+
+        .qr-code-container {
+            text-align: center;
+            margin: 1.8rem 0;
+        }
+
+        .qr-code {
+            max-width: 280px;
+            margin: 0 auto;
+            border: 2px solid var(--border);
+            padding: 1.2rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+        }
+
+        .qr-code img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .upi-details {
+            text-align: center;
+            margin-top: 1.2rem;
+        }
+
+        .upi-details p {
+            margin-bottom: 0.6rem;
+            color: #e0e0e0;
+        }
+
+        .big-upi-id {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--gold);
+            background: rgba(255, 215, 0, 0.1);
+            padding: 1.2rem;
+            border-radius: 12px;
+            margin: 1.2rem 0;
+            border: 2px dashed var(--gold);
+            text-align: center;
+            word-break: break-all;
+            text-shadow: 0 2px 8px rgba(255, 215, 0, 0.3);
+        }
+
+        .copy-upi-btn {
+            background: linear-gradient(45deg, var(--accent), #ff6b6b);
+            color: white;
+            border: none;
+            padding: 0.7rem 1.5rem;
+            border-radius: 6px;
+            cursor: pointer;
+            margin-top: 0.8rem;
+            font-weight: 600;
+            transition: all 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .copy-upi-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(233, 69, 96, 0.4);
+        }
+
+        .payment-message {
+            background: rgba(255, 200, 0, 0.1);
+            padding: 1.2rem;
+            border-radius: 10px;
+            margin: 1.8rem 0;
+            border-left: 4px solid var(--gold);
+            text-align: center;
+        }
+
+        .payment-message p {
+            margin-bottom: 0.6rem;
+            font-weight: 600;
+            color: #ffd700;
+            font-size: 1.1rem;
+        }
+
+        .email-input {
+            margin: 1.8rem 0;
+        }
+
+        .email-input label {
+            display: block;
+            margin-bottom: 0.8rem;
+            font-weight: 600;
+            color: #e0e0e0;
+        }
+
+        .email-input input {
+            width: 100%;
+            padding: 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.05);
+            color: white;
+            transition: all 0.3s;
+        }
+
+        .email-input input:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 0 2px rgba(233, 69, 96, 0.2);
+        }
+
+        .payment-complete {
+            text-align: center;
+            padding: 2.5rem;
+            display: none;
+        }
+
+        .payment-complete i {
+            font-size: 4.5rem;
+            color: var(--secondary);
+            margin-bottom: 1.5rem;
+            text-shadow: 0 4px 15px rgba(15, 157, 88, 0.4);
+        }
+
+        .payment-complete h3 {
+            color: var(--secondary);
+            margin-bottom: 1.2rem;
+            font-size: 2rem;
+        }
+
+        .payment-instructions {
+            background: rgba(15, 157, 88, 0.15);
+            padding: 1.2rem;
+            border-radius: 10px;
+            margin: 1.2rem 0;
+            border-left: 4px solid var(--secondary);
+        }
+
+        .payment-instructions h4 {
+            color: var(--secondary);
+            margin-bottom: 0.8rem;
+            font-size: 1.1rem;
+        }
+
+        .payment-instructions ol {
+            text-align: left;
+            padding-left: 1.5rem;
+            color: #e0e0e0;
+        }
+
+        .payment-instructions li {
+            margin-bottom: 0.6rem;
+        }
+
+        /* Simple Footer */
+        .simple-footer {
+            background: linear-gradient(135deg, var(--primary-dark), #0f0f23);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-top: 1px solid var(--accent);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .modal-body {
+                max-height: 80vh;
+            }
+            
+            .big-upi-id {
+                font-size: 1.5rem;
+            }
+            
+            .qr-code {
+                max-width: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Simple Header -->
+    <div class="simple-header">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <span class="logo-text">CARDING REDEEM CODE</span>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>PREMIUM PLAYSTORE REDEEM CODES</h1>
+            <p>Get exclusive access to premium Google PlayStore redeem codes. Instant delivery guaranteed!</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="container" id="products">
+        <h2 class="section-title">SELECT YOUR PACKAGE</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <div class="product-badge">MOST POPULAR</div>
+                <div class="product-icon">
+                    <i class="fab fa-google-play"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">₹10000 PLAYSTORE CODE</h3>
+                    <div class="product-price">₹1000</div>
+                    <div class="redeem-value">GET ₹10000 VALUE!</div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Instant email delivery</li>
+                        <li><i class="fas fa-check"></i> All Android devices supported</li>
+                        <li><i class="fas fa-check"></i> No hidden charges</li>
+                        <li><i class="fas fa-check"></i> 24/7 premium support</li>
+                        <li><i class="fas fa-check"></i> 12 months validity</li>
+                        <li><i class="fas fa-check"></i> 10x value guarantee</li>
+                    </ul>
+                    <button class="btn select-product" data-price="1000" data-name="₹10000 PlayStore Code" data-redeem="10000">BUY NOW</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-badge">BEST VALUE</div>
+                <div class="product-icon">
+                    <i class="fab fa-google-play"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">₹15000 PLAYSTORE CODE</h3>
+                    <div class="product-price">₹1500</div>
+                    <div class="redeem-value">GET ₹15000 VALUE!</div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Instant email delivery</li>
+                        <li><i class="fas fa-check"></i> All Android devices supported</li>
+                        <li><i class="fas fa-check"></i> No hidden charges</li>
+                        <li><i class="fas fa-check"></i> 24/7 premium support</li>
+                        <li><i class="fas fa-check"></i> 12 months validity</li>
+                        <li><i class="fas fa-check"></i> 10x value guarantee</li>
+                    </ul>
+                    <button class="btn select-product" data-price="1500" data-name="₹15000 PlayStore Code" data-redeem="15000">BUY NOW</button>
+                </div>
+            </div>
+            
+            <div class="product-card">
+                <div class="product-badge">PREMIUM</div>
+                <div class="product-icon">
+                    <i class="fab fa-google-play"></i>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">₹20000 PLAYSTORE CODE</h3>
+                    <div class="product-price">₹2000</div>
+                    <div class="redeem-value">GET ₹20000 VALUE!</div>
+                    <ul class="product-features">
+                        <li><i class="fas fa-check"></i> Instant email delivery</li>
+                        <li><i class="fas fa-check"></i> All Android devices supported</li>
+                        <li><i class="fas fa-check"></i> No hidden charges</li>
+                        <li><i class="fas fa-check"></i> 24/7 premium support</li>
+                        <li><i class="fas fa-check"></i> 12 months validity</li>
+                        <li><i class="fas fa-check"></i> 10x value guarantee</li>
+                        <li><i class="fas fa-check"></i> Priority processing</li>
+                    </ul>
+                    <button class="btn select-product" data-price="2000" data-name="₹20000 PlayStore Code" data-redeem="20000">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Modal -->
+    <div class="modal" id="paymentModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>COMPLETE YOUR ORDER</h2>
+                <button class="close-modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="order-summary">
+                    <h3>ORDER SUMMARY</h3>
+                    <div class="order-item">
+                        <span id="productName">₹10000 PlayStore Code</span>
+                        <span id="productPrice">₹1000</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Redeem Value</span>
+                        <span id="redeemValue">₹10000</span>
+                    </div>
+                    <div class="order-item">
+                        <span>Processing Fee</span>
+                        <span>₹0</span>
+                    </div>
+                    <div class="order-total">
+                        <span>TOTAL AMOUNT</span>
+                        <span id="orderTotal">₹1000</span>
+                    </div>
+                </div>
+                
+                <div class="payment-method">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>SECURE UPI PAYMENT</h3>
+                    <p>Fast & Encrypted Transaction</p>
+                </div>
+                
+                <div class="payment-details">
+                    <h3>MAKE PAYMENT</h3>
+                    
+                    <div class="payment-instructions">
+                        <h4>PAYMENT INSTRUCTIONS:</h4>
+                        <ol>
+                            <li>Scan the QR code with any UPI app</li>
+                            <li>Or send payment to the UPI ID below</li>
+                            <li>Enter your email for code delivery</li>
+                            <li>Confirm payment after completion</li>
+                        </ol>
+                    </div>
+                    
+                    <div class="qr-code-container">
+                        <div class="qr-code">
+                            <img src="https://img.sanishtech.com/u/cf3a832fe642a8936dad89b76c96b3fe.png" alt="Secure UPI QR Code" width="280" height="280" loading="lazy">
+                        </div>
+                    </div>
+                    
+                    <div class="big-upi-id">
+                        ashifshaikh@ptaxis
+                        <br>
+                        <button class="copy-upi-btn" id="copyUpiBtn">
+                            <i class="fas fa-copy"></i> COPY UPI ID
+                        </button>
+                    </div>
+                    
+                    <div class="upi-details">
+                        <p><strong>Account Name:</strong> A Ashif Shaikh</p>
+                        <p><strong>UPI ID:</strong> ashifshaikh@ptaxis</p>
+                    </div>
+                    
+                    <div class="payment-message">
+                        <p>agar aap ne payment ki hogi tabhi message aayega</p>
+                    </div>
+                    
+                    <div class="email-input">
+                        <label for="customerEmail">ENTER YOUR EMAIL ADDRESS:</label>
+                        <input type="email" id="customerEmail" placeholder="your.email@example.com" required>
+                    </div>
+                    
+                    <button class="btn" id="confirmPayment" style="width: 100%; margin-top: 1rem;">
+                        <i class="fas fa-check-circle"></i> CONFIRM PAYMENT
+                    </button>
+                </div>
+                
+                <div class="payment-complete" id="paymentComplete">
+                    <i class="fas fa-shield-check"></i>
+                    <h3>PAYMENT SUCCESSFUL!</h3>
+                    <p>Your transaction has been completed securely. The redeem code will be delivered to your email within 5 minutes.</p>
+                    <p>ORDER ID: <strong>CARDING-<span id="orderId">583742</span></strong></p>
+                    <button class="btn" id="continueShopping" style="margin-top: 1.5rem;">
+                        <i class="fas fa-shopping-bag"></i> CONTINUE SHOPPING
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Simple Footer -->
+    <div class="simple-footer">
+        <div class="container">
+            <p>&copy; 2023 CARDING REDEEM CODE. All rights reserved. | Secure & Encrypted Transactions</p>
+        </div>
+    </div>
+
+    <script>
+        // DOM Elements
+        const productButtons = document.querySelectorAll('.select-product');
+        const paymentModal = document.getElementById('paymentModal');
+        const closeModal = document.querySelector('.close-modal');
+        const productName = document.getElementById('productName');
+        const productPrice = document.getElementById('productPrice');
+        const redeemValue = document.getElementById('redeemValue');
+        const orderTotal = document.getElementById('orderTotal');
+        const confirmPayment = document.getElementById('confirmPayment');
+        const paymentComplete = document.getElementById('paymentComplete');
+        const continueShopping = document.getElementById('continueShopping');
+        const orderId = document.getElementById('orderId');
+        const customerEmail = document.getElementById('customerEmail');
+        const copyUpiBtn = document.getElementById('copyUpiBtn');
+
+        // Initialize the page
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add event listeners to product buttons
+            productButtons.forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const price = e.target.getAttribute('data-price');
+                    const name = e.target.getAttribute('data-name');
+                    const redeem = e.target.getAttribute('data-redeem');
+                    openPaymentModal(price, name, redeem);
+                });
+            });
+
+            // Close modal when clicking X
+            closeModal.addEventListener('click', closePaymentModal);
+
+            // Confirm payment
+            confirmPayment.addEventListener('click', completePayment);
+
+            // Continue shopping
+            continueShopping.addEventListener('click', continueShoppingFunc);
+
+            // Copy UPI ID to clipboard
+            copyUpiBtn.addEventListener('click', copyUpiId);
+
+            // Close modal when clicking outside
+            window.addEventListener('click', (e) => {
+                if (e.target === paymentModal) {
+                    closePaymentModal();
+                }
+            });
+        });
+
+        // Open payment modal with selected product
+        function openPaymentModal(price, name, redeem) {
+            productName.textContent = name;
+            productPrice.textContent = `₹${price}`;
+            redeemValue.textContent = `₹${redeem}`;
+            orderTotal.textContent = `₹${price}`;
+            paymentModal.style.display = 'flex';
+            
+            // Reset to initial state
+            paymentComplete.style.display = 'none';
+            customerEmail.value = '';
+            
+            // Ensure modal is properly positioned
+            paymentModal.scrollTop = 0;
+        }
+
+        // Close payment modal
+        function closePaymentModal() {
+            paymentModal.style.display = 'none';
+        }
+
+        // Copy UPI ID to clipboard
+        function copyUpiId() {
+            const upiId = 'ashifshaikh@ptaxis';
+            navigator.clipboard.writeText(upiId).then(() => {
+                // Show success message
+                const originalText = copyUpiBtn.innerHTML;
+                copyUpiBtn.innerHTML = '<i class="fas fa-check"></i> COPIED!';
+                copyUpiBtn.style.background = '#0f9d58';
+                
+                setTimeout(() => {
+                    copyUpiBtn.innerHTML = originalText;
+                    copyUpiBtn.style.background = '';
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy UPI ID: ', err);
+                alert('Failed to copy UPI ID. Please copy manually: ' + upiId);
+            });
+        }
+
+        // Complete payment process
+        function completePayment() {
+            // Validate email
+            const email = customerEmail.value.trim();
+            if (!email) {
+                alert('Please enter your email address');
+                customerEmail.focus();
+                return;
+            }
+            
+            if (!isValidEmail(email)) {
+                alert('Please enter a valid email address');
+                customerEmail.focus();
+                return;
+            }
+            
+            // In a real application, you would verify the payment here
+            // For this demo, we'll just show the success message
+            
+            // Generate a random order ID
+            const randomOrderId = Math.floor(100000 + Math.random() * 900000);
+            orderId.textContent = randomOrderId;
+            
+            // Hide payment details and show success message
+            document.querySelector('.payment-details').style.display = 'none';
+            paymentComplete.style.display = 'block';
+            
+            // In a real application, you would send the email here
+            console.log(`Redeem code would be sent to: ${email}`);
+        }
+
+        // Validate email format
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Continue shopping after payment
+        function continueShoppingFunc() {
+            // Close payment modal
+            closePaymentModal();
+            
+            // Show success notification
+            showNotification('Your PlayStore code has been sent to your email!');
+        }
+
+        // Show notification
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: linear-gradient(45deg, #0f9d58, #4caf50);
+                color: white;
+                padding: 1.2rem 1.8rem;
+                border-radius: 10px;
+                box-shadow: 0 6px 20px rgba(15, 157, 88, 0.4);
+                z-index: 1001;
+                transition: opacity 0.3s;
+                font-weight: 600;
+                border: 1px solid #4caf50;
+            `;
+            
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.style.opacity = '0';
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 4000);
+        }
+    </script>
+</body>
+</html>
